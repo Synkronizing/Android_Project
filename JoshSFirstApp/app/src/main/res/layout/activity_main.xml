@@ -85,7 +85,7 @@
         android:text="Result"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
-        app:fontFamily="sans-serif-condensed"
+        app:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
