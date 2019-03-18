@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Hello! This was made by Josh S!"
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="204dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
@@ -37,7 +38,7 @@
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/SecondNumEditText"
@@ -87,7 +88,6 @@
         android:textSize="48sp"
         app:fontFamily="monospace"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addBtn" />
 
@@ -100,7 +100,7 @@
         android:layout_marginRight="32dp"
         android:background="@drawable/button_bg_rounded_corners3"
         android:text="Multiply"
-        android:textSize="14sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/addBtn"
         app:layout_constraintTop_toBottomOf="@+id/SecondNumEditText" />
 
@@ -111,10 +111,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:background="@drawable/button_bg_rounded_corners2"
         android:text="Divide"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/addBtn"
         app:layout_constraintTop_toBottomOf="@+id/SecondNumEditText" />
 
@@ -124,13 +128,46 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/button_bg_rounded_corners3"
         android:text="Subtract"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBtn" />
+
+    <Button
+        android:id="@+id/powBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/button_bg_rounded_corners2"
+        android:text="Power"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/subBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cosBtn"
+        app:layout_constraintTop_toBottomOf="@+id/addBtn" />
+
+    <Button
+        android:id="@+id/cosBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:text="cos(X)*Y"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addBtn" />
 

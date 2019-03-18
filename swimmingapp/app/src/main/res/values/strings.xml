@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">swimming app Josh S</string>
+    <string-array name="items">
+        <item>Goggles</item>
+        <item>Tech Suit</item>
+        <item>Fins</item>
+    </string-array>
+    <string-array name="prices">
+        <item>$34.99</item>
+        <item>$349.99</item>
+        <item>$19.59</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item>Arena racing goggles. Comes with multiple nose pieces in varying sizes</item>
+        <item>Avictor random colored Tech Suit. Used by high level swimmers in races.</item>
+        <item>Fins used during practice.</item>
+    </string-array>
+</resources>
